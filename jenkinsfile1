@@ -1,0 +1,15 @@
+pipeline
+{
+agent any
+stages
+ {
+    stage ("scm checkout")
+    {
+            steps{sh 'code is downloaded'}
+        }
+    stage ("artifact created")
+    {
+        steps {sh 'artifact build'}    }
+    
+ }
+}
