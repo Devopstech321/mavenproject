@@ -23,7 +23,7 @@ stages
 
   stage ("approval")
    {
-       steps {jiraGetIssue idOrKey: 'EC-9', site: 'jekins/jira-intigration'}
+       steps {jiraGetIssue idOrKey: 'EC', site: 'jekins/jira-intigration'}
    } 
 }
 }
