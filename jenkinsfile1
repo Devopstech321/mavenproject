@@ -20,6 +20,14 @@ stages
               {sh 'mvn package'}
             }
             }
+  stage ("create docker image")
+     {
+     steps{sh 'docker build -t 123doc123/myweb.v1 .'}
+     }
+  stage ("push docker image to docker hub")
+    {
+   steps{sh 'docker push 123doc123/myweb.v1'}
+     }
 
   stage ("approval")
    {
